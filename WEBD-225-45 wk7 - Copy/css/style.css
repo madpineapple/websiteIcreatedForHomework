@@ -1,0 +1,224 @@
+/* The below elements provide style to the links*/
+a:link {
+	color: black;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+	color: blue;
+}
+a:active {
+	color: yellow;
+}
+
+/* The below elements style the images in the home page*/
+@media only screen and (min-width: 900px){
+  #gksLogo{
+  background-color:orange;
+  background: linear-gradient(orange, yellow); 
+  width:50%;
+  float: left;
+}
+#Books{
+  background-color:red;
+    width:50%;
+  box-shadow: 10px 10px;
+  float:right
+}
+#newsUpdates{
+  background-color:green;
+  width:50%;
+  float:right
+}
+#About{
+  background-color:blue;
+  width:50%;
+  float:right;
+}
+#Contact{
+  background-color:yellow;
+  width:50%;
+  float:right;
+}
+#Homeimg {
+  float:left;
+
+}
+#Bookimg1{
+  float:left;
+  border-style: dotted;
+}
+#Bookimg2{
+  float:right;
+  border-style: dotted;
+}}
+
+@media only screen and (min-width: 600px){
+#gksLogo{
+  background-color:black;
+  background: linear-gradient(black, yellow); 
+  width:50%;
+  display: block;
+  
+}
+#Books{
+  background-color:red;
+    width:50%;
+  box-shadow: 10px 10px;
+  display: block;
+   
+ 
+
+}
+#newsUpdates{
+  background-color:green;
+  width:50%;
+  float:center;
+  display: block;
+
+}
+#About{
+  background-color:blue;
+  width:50%;
+  float:center;
+  display: block;
+
+}
+#Contact{
+  background-color:yellow;
+  width:50%;
+  float:center;
+  display: block;
+
+}
+#Homeimg {
+  float:center;
+  display: block;
+
+
+}
+#Bookimg1{
+  float:left;
+  border-style: dotted;
+  display: block;
+
+}
+#Bookimg2{
+  float:right;
+  border-style: dotted;
+  display: block;
+
+}
+}
+
+#div1
+{
+	float:left;
+}
+
+#div2
+{
+	float:right;
+}
+
+#gradient1
+{
+   height: 50px;
+    background: blue; 
+    background: linear-gradient(blue, black); 
+}
+
+p.dotted {border-style: dotted;}
+
+/* The below elements provide style to the table in the Books page*/
+table {
+	width: 300px;
+	border:25px solid black;
+	padding: 25px;
+	margin: 25px;
+}
+
+th {border: 1px solid blue;}
+
+td { border: 1px solid purple;}
+
+p {
+	font-family: "sans-serif", Georgia, serif;
+}
+
+/* The below elements are for the animated transitions and styles*/
+/* in the news page*/
+
+.progress {
+    height: 100px;
+    border-radius: 10px;
+    background:
+    -webkit-repeating-linear-gradient(-50deg,
+    rgba(255,255,255,.1), rgba(255,255,255,0) 25px),             
+    -webkit-linear-gradient(red, white);
+
+    -webkit-animation-name: bar;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+}
+@-webkit-keyframes bar {
+    0%   { width:   0%; }
+    25%  { width:  25%; }
+    50%  { width:  50%; }
+    75%  { width:  25%; }
+    100% { width: 100%; }
+}
+
+.circle {
+
+  width:700px;
+    height:700px;
+    background:black;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+}
+
+.circle:hover {
+  border-radius:50%;  
+  cursor: pointer;
+}
+
+.text {
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  padding-top:0px;
+  transition: all .3s ease-in-out;
+}
+
+.circle:hover .text {
+  padding-top: 40px;
+  opacity: 1;
+}
+
+h1 {
+	font-family: 'Sedgwick Ave Display', cursive;
+}
+
+
+/* The below elements are related to the Contact Page*/
+select {
+    width: 10%;
+    padding: 16px 20px;
+    border: solid;
+    border-radius: 4px;
+   
+}
+
+textarea{
+	width: 50%;
+	padding: 10px;
+	margin: 8px;
+
+}
+button {
+	background-color: green;
+}
+

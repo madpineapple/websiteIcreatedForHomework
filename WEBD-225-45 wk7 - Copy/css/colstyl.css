@@ -1,0 +1,21 @@
+a:link {
+	color: black;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+	color: blue;
+}
+a:active {
+	color: yellow;
+}
+#topContent{
+	background-color:red;
+	width:38%;
+	}
+#leftContent{
+	background-color:red;
+	width:38%;
+	
+}

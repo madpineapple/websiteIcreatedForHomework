@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+   <head>
+      <title>Gordion Knots Solutions</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+    </head>
+    <body>
+      <header>
+        Interactive page
+    	  </header>
+       <nav>
+        <div class="progress">
+       	     <ul>
+       	     	<li><a href="index.html">Home</a></li>
+       	     	<li><a href="Books.html">Books</a></li>
+       	     	<li><a href="News.html"> News and Updates</a></li>
+       	     	<li><a href="About.html"> About the writer</a></li>
+       	     	<li><a href="Contact.html"> Contact Info</a></li>
+              <li><a href="DragandDrop.html"> DragandDrop</a></li>
+
+       	     </ul>
+           </div>
+
+    </nav>
+  <style>
+#div1 
+{
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+#div2 
+{
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+</style>
+ 
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+
+<p>Drag the grenade into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="Bookimg1" src="images/IMG_20170511_173117_862(1).jpg" draggable="true" ondragstart="drag(event)" alt = "" width="336" height="336">
+
+
+<p>Drag the angel into the rectangle:</p>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="Bookimg2" src="images/IMG_20170323_202156_422.jpg" draggable="true" ondragstart="drag(event)" alt = "" width="336" height="336">
+</body>
+</html>
